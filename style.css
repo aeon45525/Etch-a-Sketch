@@ -1,5 +1,6 @@
 #container {
-  /* display: flex;
+  display: flex;
   flex-wrap: wrap;
-  width: 16 * boxWidth; */
+  width: 800px;
+  border: 1px solid black;
 }
