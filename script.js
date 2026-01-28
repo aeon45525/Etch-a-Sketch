@@ -4,8 +4,6 @@ grids = 16;
 for (let i = 1; i <= grids * grids; i++) {
   const divGrid = document.createElement("div");
   divGrid.classList.add("divGrid");
-  divGrid.style.cssText =
-    "width: 50px; height: 50px; border: 1px solid black; box-sizing: border-box";
   divGrid.addEventListener(
     "mouseover",
     () => (divGrid.style.backgroundColor = "darkorchid"),
@@ -19,6 +17,6 @@ const cellWidth = cell.offsetWidth;
 
 container.style.width = `${cellWidth * grids}px`;
 
-console.log(`cellwidth: ${cellWidth}`);
-console.log(`cellheight: ${cellHeight}`);
-console.log(`container width: ${container.offsetWidth}`);
+// console.log(`cellwidth: ${cellWidth}`);
+// console.log(`cellheight: ${cellHeight}`);
+// console.log(`container width: ${container.offsetWidth}`);
