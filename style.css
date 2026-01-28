@@ -4,3 +4,7 @@
   width: 800px;
   border: 1px solid black;
 }
+
+.divGrid:hover {
+  background-color: darkorchid;
+}
