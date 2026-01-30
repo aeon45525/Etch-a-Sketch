@@ -35,6 +35,19 @@ function generateGrid(pix) {
     );
     container.appendChild(divGrid);
   }
+
+  // to gradually increase color of boxes on each mouseover
+  // knew enough to use .forEach method as nodes acts like an array
+  // knew how to get and set the boxes opacity
+  // knew that i had to add an event listener for each box
+  // but didnt quite get how to increment it evident at line 47 and 48
+  const boxes = document.querySelectorAll(".divGrid");
+  boxes.forEach((box) => {
+    box.addEventListener("mouseover", () => {
+      let current = parseFloat(box.style.opacity) || 0; // read current opacity
+      box.style.opacity = Math.min(current + 0.1, 1); // increase gradually
+    });
+  });
 }
 
 // gets user input limiting it to 100 pixels
